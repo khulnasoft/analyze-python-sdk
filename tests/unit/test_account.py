@@ -3,8 +3,8 @@ from http import HTTPStatus
 
 import responses
 
-from khulnasoft_sdk import errors
-from khulnasoft_sdk.account import Account
+from khulnasoft_analyze_sdk import errors
+from khulnasoft_analyze_sdk.account import Account
 from tests.unit.base_test import BaseTest
 
 

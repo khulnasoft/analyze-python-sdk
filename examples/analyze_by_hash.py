@@ -2,8 +2,8 @@ import datetime
 import sys
 from pprint import pprint
 
-from khulnasoft_sdk import api
-from khulnasoft_sdk.analysis import FileAnalysis
+from khulnasoft_analyze_sdk import api
+from khulnasoft_analyze_sdk.analysis import FileAnalysis
 
 
 def analysis_by_hash_with_wait(file_hash: str):

@@ -2,8 +2,8 @@ import datetime
 import sys
 from pprint import pprint
 
-from khulnasoft_sdk.analyses_history import query_file_analyses_history
-from khulnasoft_sdk import api
+from khulnasoft_analyze_sdk.analyses_history import query_file_analyses_history
+from khulnasoft_analyze_sdk import api
 
 
 def analyses_history_example(start_date: datetime.datetime, end_date: datetime.datetime):

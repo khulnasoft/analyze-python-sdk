@@ -9,15 +9,15 @@ from typing import IO
 from typing import List
 from typing import Optional
 
-from khulnasoft_sdk import consts
-from khulnasoft_sdk._api import KhulnasoftApi
-from khulnasoft_sdk._endpoint_analysis_api import EndpointScanApi
-from khulnasoft_sdk.api import KhulnasoftApiClient
-from khulnasoft_sdk.api import get_global_api
-from khulnasoft_sdk.base_analysis import Analysis
-from khulnasoft_sdk.consts import EndpointAnalysisEndReason
-from khulnasoft_sdk.consts import SCAN_DEFAULT_MAX_WORKERS
-from khulnasoft_sdk.sub_analysis import SubAnalysis
+from khulnasoft_analyze_sdk import consts
+from khulnasoft_analyze_sdk._api import KhulnasoftApi
+from khulnasoft_analyze_sdk._endpoint_analysis_api import EndpointScanApi
+from khulnasoft_analyze_sdk.api import KhulnasoftApiClient
+from khulnasoft_analyze_sdk.api import get_global_api
+from khulnasoft_analyze_sdk.base_analysis import Analysis
+from khulnasoft_analyze_sdk.consts import EndpointAnalysisEndReason
+from khulnasoft_analyze_sdk.consts import SCAN_DEFAULT_MAX_WORKERS
+from khulnasoft_analyze_sdk.sub_analysis import SubAnalysis
 
 logger = logging.getLogger(__name__)
 
@@ -29,7 +29,7 @@ class EndpointAnalysis(Analysis):
     :ivar analysis_id: The analysis id.
     :vartype analysis_id: str
     :ivar status: The status of the analysis.
-    :vartype status: khulnasoft_sdk.consts.AnalysisStatusCode
+    :vartype status: khulnasoft_analyze_sdk.consts.AnalysisStatusCode
     :ivar analysis_time: The date that the analysis was executed.
     :vartype analysis_time: datetime.datetime
     """

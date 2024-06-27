@@ -1,4 +1,4 @@
-![PyPI](https://img.shields.io/pypi/v/khulnasoft_sdk)
+![PyPI](https://img.shields.io/pypi/v/khulnasoft_analyze_sdk)
 ![Build](https://github.com/khulnasoft/analyze-python-sdk/actions/workflows/test.yml/badge.svg)
 # Khulnasoft SDK
 
@@ -23,7 +23,7 @@ Currently, the following options are available in the SDK:
 ## Installation
 
 ```bash
-pip install khulnasoft-sdk
+pip install khulnasoft-analyze-sdk
 ```
 
 ## Using Khulnasoft SDK
@@ -123,7 +123,7 @@ result = analysis.result()
 ```
 ### Index By File
 ```python
-from khulnasoft_sdk import consts
+from khulnasoft_analyze_sdk import consts
 
 index = Index(file_path=<file_path>, 
               index_as=consts.IndexType.MALICIOUS, 
@@ -133,7 +133,7 @@ index_id = index.index_id
 ```
 ### Index By SHA256
 ```python
-from khulnasoft_sdk import consts
+from khulnasoft_analyze_sdk import consts
 
 index = Index(sha256=<file_sha256>, 
               index_as=consts.IndexType.TRUSTED)

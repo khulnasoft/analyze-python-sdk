@@ -4,7 +4,7 @@ from typing import Any
 from typing import Dict
 from typing import Tuple
 
-from khulnasoft_sdk.api import KhulnasoftApiClient
+from khulnasoft_analyze_sdk.api import KhulnasoftApiClient
 
 
 class HistoryResult:

@@ -4,12 +4,12 @@ from typing import List
 from typing import Optional
 from typing import Union
 
-from khulnasoft_sdk import _operation
-from khulnasoft_sdk import errors
-from khulnasoft_sdk import operation
-from khulnasoft_sdk._api import KhulnasoftApi
-from khulnasoft_sdk.api import KhulnasoftApiClient
-from khulnasoft_sdk.api import get_global_api
+from khulnasoft_analyze_sdk import _operation
+from khulnasoft_analyze_sdk import errors
+from khulnasoft_analyze_sdk import operation
+from khulnasoft_analyze_sdk._api import KhulnasoftApi
+from khulnasoft_analyze_sdk.api import KhulnasoftApiClient
+from khulnasoft_analyze_sdk.api import get_global_api
 
 
 class SubAnalysis:

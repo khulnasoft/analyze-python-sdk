@@ -1,6 +1,6 @@
 import enum
 
-from khulnasoft_sdk import __version__
+from khulnasoft_analyze_sdk import __version__
 
 DEFAULT_DATE_FORMAT = '%a, %d %b %Y %X GMT'
 

@@ -15,11 +15,11 @@ import requests
 import requests.adapters
 from requests import Response
 
-from khulnasoft_sdk import consts
-from khulnasoft_sdk import errors
-from khulnasoft_sdk._util import deprecated
-from khulnasoft_sdk.consts import IndexType
-from khulnasoft_sdk.consts import OnPremiseVersion
+from khulnasoft_analyze_sdk import consts
+from khulnasoft_analyze_sdk import errors
+from khulnasoft_analyze_sdk._util import deprecated
+from khulnasoft_analyze_sdk.consts import IndexType
+from khulnasoft_analyze_sdk.consts import OnPremiseVersion
 
 _global_api: Optional['KhulnasoftApi'] = None
 
@@ -205,7 +205,7 @@ class KhulnasoftApiClient:
         """
         Authenticate against Khulnasoft.
 
-        :raises: :data:`khulnasoft_sdk.errors.InvalidApiKeyError`: When the API key is invalid
+        :raises: :data:`khulnasoft_analyze_sdk.errors.InvalidApiKeyError`: When the API key is invalid
         """
         self._set_session()
 
@@ -722,7 +722,7 @@ def get_global_api() -> KhulnasoftApi:
     """
     Returns the global :data:`KhulnasoftApi` previously configured with :func:`set_global_api`
 
-    :raises: `khulnasoft_sdk.errors.GlobalApiIsNotInitializedError` in case the api wasn't configured
+    :raises: `khulnasoft_analyze_sdk.errors.GlobalApiIsNotInitializedError` in case the api wasn't configured
     :return: The global api
     """
     global _global_api

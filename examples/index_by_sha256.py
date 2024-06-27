@@ -1,9 +1,9 @@
 import sys
 from pprint import pprint
 
-from khulnasoft_sdk import api
-from khulnasoft_sdk import consts
-from khulnasoft_sdk.index import Index
+from khulnasoft_analyze_sdk import api
+from khulnasoft_analyze_sdk import consts
+from khulnasoft_analyze_sdk.index import Index
 
 
 def index_by_sha256_with_wait(sha256, index_as, family_name=None):  # type: (str, str, str) -> None

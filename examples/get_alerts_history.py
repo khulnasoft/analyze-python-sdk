@@ -2,8 +2,8 @@ import datetime
 import sys
 from pprint import pprint
 
-from khulnasoft_sdk.alerts import query_alerts_history
-from khulnasoft_sdk import api
+from khulnasoft_analyze_sdk.alerts import query_alerts_history
+from khulnasoft_analyze_sdk import api
 
 
 def alerts_history_example(start_date: datetime.datetime, end_date: datetime.datetime):

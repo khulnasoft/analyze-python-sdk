@@ -5,11 +5,11 @@ from http import HTTPStatus
 
 import responses
 
-from khulnasoft_sdk import consts
-from khulnasoft_sdk import errors
-from khulnasoft_sdk.api import KhulnasoftApiClient
-from khulnasoft_sdk.api import raise_for_status
-from khulnasoft_sdk.api import set_global_api
+from khulnasoft_analyze_sdk import consts
+from khulnasoft_analyze_sdk import errors
+from khulnasoft_analyze_sdk.api import KhulnasoftApiClient
+from khulnasoft_analyze_sdk.api import raise_for_status
+from khulnasoft_analyze_sdk.api import set_global_api
 
 
 class BaseTest(unittest.TestCase):

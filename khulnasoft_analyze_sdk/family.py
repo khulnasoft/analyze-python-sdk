@@ -3,10 +3,10 @@ import typing
 from typing import Optional
 from typing import List
 
-from khulnasoft_sdk import errors
-from khulnasoft_sdk._api import KhulnasoftApi
-from khulnasoft_sdk.api import KhulnasoftApiClient
-from khulnasoft_sdk.api import get_global_api
+from khulnasoft_analyze_sdk import errors
+from khulnasoft_analyze_sdk._api import KhulnasoftApi
+from khulnasoft_analyze_sdk.api import KhulnasoftApiClient
+from khulnasoft_analyze_sdk.api import get_global_api
 
 
 class Family:

@@ -16,10 +16,10 @@ from typing import Tuple
 import requests
 import requests.adapters
 
-from khulnasoft_sdk import api
-from khulnasoft_sdk import errors
-from khulnasoft_sdk import util
-from khulnasoft_sdk.analysis import FileAnalysis
+from khulnasoft_analyze_sdk import api
+from khulnasoft_analyze_sdk import errors
+from khulnasoft_analyze_sdk import util
+from khulnasoft_analyze_sdk.analysis import FileAnalysis
 
 _s1_session: Optional[requests.Session] = None
 _logger = logging.getLogger('khulnasoft')

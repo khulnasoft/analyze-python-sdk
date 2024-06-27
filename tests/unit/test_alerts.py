@@ -4,8 +4,8 @@ import uuid
 
 import responses
 
-from khulnasoft_sdk.alerts import get_alerts_by_alert_ids
-from khulnasoft_sdk.alerts import Alert
+from khulnasoft_analyze_sdk.alerts import get_alerts_by_alert_ids
+from khulnasoft_analyze_sdk.alerts import Alert
 from tests.unit.base_test import BaseTest
 from tests.utils import load_binary_file_from_resources
 

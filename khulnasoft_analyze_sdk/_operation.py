@@ -3,8 +3,8 @@ from typing import Dict
 from typing import Optional
 from typing import Union
 
-from khulnasoft_sdk._api import KhulnasoftApi
-from khulnasoft_sdk.operation import Operation
+from khulnasoft_analyze_sdk._api import KhulnasoftApi
+from khulnasoft_analyze_sdk.operation import Operation
 
 
 def handle_operation(operations: Dict[str, Operation],

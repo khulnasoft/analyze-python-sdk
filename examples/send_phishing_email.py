@@ -2,8 +2,8 @@ import io
 import sys
 from pprint import pprint
 
-from khulnasoft_sdk import api
-from khulnasoft_sdk.alerts import Alert
+from khulnasoft_analyze_sdk import api
+from khulnasoft_analyze_sdk.alerts import Alert
 
 def send_phishing_email(path_to_eml_file):
     api.set_global_api('<api_key>')

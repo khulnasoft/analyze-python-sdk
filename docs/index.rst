@@ -9,9 +9,9 @@ Welcome to Khulnasoft Python SDK's documentation!
 
 GitHub (code repository, issues): https://github.com/khulnasoft//analyze-python-sdk
 
-PyPI (installable, stable distributions): https://pypi.org/project/khulnasoft-sdk. You can install Injector using pip::
+PyPI (installable, stable distributions): https://pypi.org/project/khulnasoft-analyze-sdk. You can install Injector using pip::
 
-    pip install khulnasoft-sdk
+    pip install khulnasoft-analyze-sdk
 
 Khulnasoft SDK works with CPython 3.6+ .
 

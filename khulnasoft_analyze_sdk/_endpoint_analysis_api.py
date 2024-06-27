@@ -4,9 +4,9 @@ from typing import List
 
 import requests
 
-from khulnasoft_sdk.api import KhulnasoftApiClient
-from khulnasoft_sdk.api import raise_for_status
-from khulnasoft_sdk.consts import SCAN_MAX_UPLOAD_RETRIES
+from khulnasoft_analyze_sdk.api import KhulnasoftApiClient
+from khulnasoft_analyze_sdk.api import raise_for_status
+from khulnasoft_analyze_sdk.consts import SCAN_MAX_UPLOAD_RETRIES
 
 
 class EndpointScanApi:

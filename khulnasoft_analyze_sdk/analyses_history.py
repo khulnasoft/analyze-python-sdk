@@ -3,9 +3,9 @@ from typing import Any
 from typing import Dict
 from typing import List
 
-from khulnasoft_sdk.analyses_results import AnalysesHistoryResult
-from khulnasoft_sdk.api import KhulnasoftApiClient
-from khulnasoft_sdk.api import get_global_api
+from khulnasoft_analyze_sdk.analyses_results import AnalysesHistoryResult
+from khulnasoft_analyze_sdk.api import KhulnasoftApiClient
+from khulnasoft_analyze_sdk.api import get_global_api
 
 DEFAULT_LIMIT = 100
 DEFAULT_OFFSET = 0

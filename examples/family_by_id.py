@@ -1,8 +1,8 @@
 import sys
 from pprint import pprint
 
-from khulnasoft_sdk import api
-from khulnasoft_sdk.family import Family
+from khulnasoft_analyze_sdk import api
+from khulnasoft_analyze_sdk.family import Family
 
 
 def fetch_family_by_family_id(family_id: str):

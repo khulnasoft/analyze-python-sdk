@@ -1,8 +1,8 @@
 import sys
 from pprint import pprint
 
-from khulnasoft_sdk import api
-from khulnasoft_sdk.analysis import UrlAnalysis
+from khulnasoft_analyze_sdk import api
+from khulnasoft_analyze_sdk.analysis import UrlAnalysis
 
 
 def get_url_latest_analysis(url: str):

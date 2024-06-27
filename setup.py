@@ -7,7 +7,7 @@ def rel(*xs):
     return os.path.join(os.path.abspath(os.path.dirname(__file__)), *xs)
 
 
-with open(rel('khulnasoft_sdk', '__init__.py'), 'r') as f:
+with open(rel('khulnasoft_analyze_sdk', '__init__.py'), 'r') as f:
     version_marker = '__version__ = '
     for line in f:
         if line.startswith(version_marker):
@@ -21,9 +21,9 @@ with open('README.md') as f:
     long_description = f.read()
 
 setup(
-    name='khulnasoft_sdk',
+    name='khulnasoft_analyze_sdk',
     version=version,
-    packages=['khulnasoft_sdk'],
+    packages=['khulnasoft_analyze_sdk'],
     url='https://github.com/khulnasoft/analyze-python-sdk',
     license='Apache 2.0',
     author='Khulnasoft Labs ltd.',

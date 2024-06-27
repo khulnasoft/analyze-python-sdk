@@ -2,9 +2,9 @@ import datetime
 from typing import List
 from typing import Optional
 
-from khulnasoft_sdk import consts
-from khulnasoft_sdk._account_api import AccountApi
-from khulnasoft_sdk.api import KhulnasoftApiClient
+from khulnasoft_analyze_sdk import consts
+from khulnasoft_analyze_sdk._account_api import AccountApi
+from khulnasoft_analyze_sdk.api import KhulnasoftApiClient
 
 
 class Account:
@@ -77,8 +77,8 @@ class Account:
         Get quota usage of the current account
 
         :param api: The API connection to Khulnasoft.
-        :param raise_on_no_file_quota: should raise :data:`khulnasoft_sdk.errors.InsufficientQuotaError` if no file quota left
-        :param raise_on_no_endpoint_quota: should raise :data:`khulnasoft_sdk.errors.InsufficientQuotaError` if no endpoint quota left
+        :param raise_on_no_file_quota: should raise :data:`khulnasoft_analyze_sdk.errors.InsufficientQuotaError` if no file quota left
+        :param raise_on_no_endpoint_quota: should raise :data:`khulnasoft_analyze_sdk.errors.InsufficientQuotaError` if no endpoint quota left
         :return:
         """
         return AccountApi(api).get_my_quota(raise_on_no_file_quota, raise_on_no_endpoint_quota)

@@ -12,17 +12,17 @@ from typing import List
 import requests
 from requests import Response
 
-from khulnasoft_sdk import _operation
-from khulnasoft_sdk import consts
-from khulnasoft_sdk import errors
-from khulnasoft_sdk import operation
-from khulnasoft_sdk._api import KhulnasoftApi
-from khulnasoft_sdk._util import deprecated
-from khulnasoft_sdk.analyses_history import query_url_analyses_history
-from khulnasoft_sdk.api import KhulnasoftApiClient
-from khulnasoft_sdk.api import get_global_api
-from khulnasoft_sdk.base_analysis import Analysis
-from khulnasoft_sdk.sub_analysis import SubAnalysis
+from khulnasoft_analyze_sdk import _operation
+from khulnasoft_analyze_sdk import consts
+from khulnasoft_analyze_sdk import errors
+from khulnasoft_analyze_sdk import operation
+from khulnasoft_analyze_sdk._api import KhulnasoftApi
+from khulnasoft_analyze_sdk._util import deprecated
+from khulnasoft_analyze_sdk.analyses_history import query_url_analyses_history
+from khulnasoft_analyze_sdk.api import KhulnasoftApiClient
+from khulnasoft_analyze_sdk.api import get_global_api
+from khulnasoft_analyze_sdk.base_analysis import Analysis
+from khulnasoft_analyze_sdk.sub_analysis import SubAnalysis
 
 logger = logging.getLogger(__name__)
 
@@ -34,7 +34,7 @@ class FileAnalysis(Analysis):
     :ivar analysis_id: The analysis id.
     :vartype analysis_id: str
     :ivar status: The status of the analysis.
-    :vartype status: khulnasoft_sdk.consts.AnalysisStatusCode
+    :vartype status: khulnasoft_analyze_sdk.consts.AnalysisStatusCode
     :ivar analysis_time: The date that the analysis was executed.
     :vartype analysis_time: datetime.datetime
     """
@@ -267,7 +267,7 @@ class FileAnalysis(Analysis):
                        wait: Union[bool, int] = False,
                        wait_timeout: Optional[datetime.timedelta] = None) -> Optional[operation.Operation]:
         """
-        Gets the detection report :data:`khulnasoft_sdk.operation.Operation` related to specific analysis.
+        Gets the detection report :data:`khulnasoft_analyze_sdk.operation.Operation` related to specific analysis.
 
         :param wait: Should wait until the operation completes.
         :param wait_timeout: Maximum duration to wait for analysis completion in seconds.
@@ -352,7 +352,7 @@ class UrlAnalysis(Analysis):
     :ivar analysis_id: The analysis id.
     :vartype analysis_id: str
     :ivar status: The status of the analysis.
-    :vartype status: khulnasoft_sdk.consts.AnalysisStatusCode
+    :vartype status: khulnasoft_analyze_sdk.consts.AnalysisStatusCode
     :ivar analysis_time: The date that the analysis was executed.
     :vartype analysis_time: datetime.datetime
     :ivar url: The analyzed url

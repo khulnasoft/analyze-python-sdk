@@ -3,8 +3,8 @@ import hashlib
 import os
 import argparse
 
-from khulnasoft_sdk import api
-from khulnasoft_sdk.analysis import FileAnalysis
+from khulnasoft_analyze_sdk import api
+from khulnasoft_analyze_sdk.analysis import FileAnalysis
 import psutil
 
 

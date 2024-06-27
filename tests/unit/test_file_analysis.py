@@ -12,13 +12,13 @@ from unittest.mock import patch
 import requests
 import responses
 
-from khulnasoft_sdk import consts
-from khulnasoft_sdk import errors
-from khulnasoft_sdk.analysis import FileAnalysis
-from khulnasoft_sdk.api import get_global_api
-from khulnasoft_sdk.consts import OnPremiseVersion
-from khulnasoft_sdk.endpoint_analysis import EndpointAnalysis
-from khulnasoft_sdk.sub_analysis import SubAnalysis
+from khulnasoft_analyze_sdk import consts
+from khulnasoft_analyze_sdk import errors
+from khulnasoft_analyze_sdk.analysis import FileAnalysis
+from khulnasoft_analyze_sdk.api import get_global_api
+from khulnasoft_analyze_sdk.consts import OnPremiseVersion
+from khulnasoft_analyze_sdk.endpoint_analysis import EndpointAnalysis
+from khulnasoft_analyze_sdk.sub_analysis import SubAnalysis
 from tests.unit.base_test import BaseTest
 
 

@@ -14,17 +14,17 @@ from typing import Union
 from typing import Type
 from typing import Optional
 
-from khulnasoft_sdk._api import KhulnasoftApi
-from khulnasoft_sdk.alerts_results import AlertsHistoryResult
-from khulnasoft_sdk.analysis import FileAnalysis
-from khulnasoft_sdk.analysis import UrlAnalysis
-from khulnasoft_sdk.endpoint_analysis import EndpointAnalysis
-from khulnasoft_sdk.consts import AlertStatusCode
-from khulnasoft_sdk._api import KhulnasoftApiClient
-from khulnasoft_sdk.api import get_global_api
-from khulnasoft_sdk import errors
-from khulnasoft_sdk import consts
-from khulnasoft_sdk.util import add_filter
+from khulnasoft_analyze_sdk._api import KhulnasoftApi
+from khulnasoft_analyze_sdk.alerts_results import AlertsHistoryResult
+from khulnasoft_analyze_sdk.analysis import FileAnalysis
+from khulnasoft_analyze_sdk.analysis import UrlAnalysis
+from khulnasoft_analyze_sdk.endpoint_analysis import EndpointAnalysis
+from khulnasoft_analyze_sdk.consts import AlertStatusCode
+from khulnasoft_analyze_sdk._api import KhulnasoftApiClient
+from khulnasoft_analyze_sdk.api import get_global_api
+from khulnasoft_analyze_sdk import errors
+from khulnasoft_analyze_sdk import consts
+from khulnasoft_analyze_sdk.util import add_filter
 
 DEFAULT_LIMIT = 100
 DEFAULT_OFFSET = 0
@@ -330,8 +330,8 @@ class Alert:
         """
         Get the raw alert result, as received from Khulnasoft Analyze API.
 
-        :raises khulnasoft_sdk.errors.AlertNotFound: If the alert was not found.
-        :raises khulnasoft_sdk.errors.AlertInProgressError: If the alert is in progress
+        :raises khulnasoft_analyze_sdk.errors.AlertNotFound: If the alert was not found.
+        :raises khulnasoft_analyze_sdk.errors.AlertInProgressError: If the alert is in progress
         :return: The raw alert dictionary.
         """
         if self.status == AlertStatusCode.NOT_FOUND:
@@ -355,8 +355,8 @@ class Alert:
         :param fetch_scans: Whether to fetch the scans for the alert - this could take some time.
         :param wait: Wait for the alert to finish processing before returning.
         :param timeout: The timeout for the wait operation.
-        :raises khulnasoft_sdk.errors.AlertNotFound: If the alert was not found.
-        :raises khulnasoft_sdk.errors.AlertInProgressError: If the alert is still being processed.
+        :raises khulnasoft_analyze_sdk.errors.AlertNotFound: If the alert was not found.
+        :raises khulnasoft_analyze_sdk.errors.AlertInProgressError: If the alert is still being processed.
         :return: The Alert instance, with the updated alert data.
         """
         new_alert = cls(alert_id=alert_id, api=api)
@@ -484,7 +484,7 @@ class Alert:
         :param interval: The interval to wait between checks in seconds.
         :param sleep_before_first_check: Whether to sleep before the first status check.
         :param timeout: Maximum duration to wait for analysis completion in seconds.
-        :raises khulnasoft_sdk.errors.AlertNotFoundError: If the alert was not found.
+        :raises khulnasoft_analyze_sdk.errors.AlertNotFoundError: If the alert was not found.
         :raise TimeoutError: If the timeout was reached.
         """
         start_time = datetime.datetime.utcnow()

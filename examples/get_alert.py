@@ -1,8 +1,8 @@
 import sys
 from pprint import pprint
 
-from khulnasoft_sdk import api
-from khulnasoft_sdk.alerts import Alert
+from khulnasoft_analyze_sdk import api
+from khulnasoft_analyze_sdk.alerts import Alert
 
 
 def get_alert_by_id(alert_id: str):

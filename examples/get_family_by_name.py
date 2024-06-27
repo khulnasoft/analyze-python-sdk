@@ -1,7 +1,7 @@
 import sys
 
-from khulnasoft_sdk import api
-from khulnasoft_sdk import family as khulnasoft_family
+from khulnasoft_analyze_sdk import api
+from khulnasoft_analyze_sdk import family as khulnasoft_family
 
 
 def search_family(family_name: str):

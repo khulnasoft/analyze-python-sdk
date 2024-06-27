@@ -10,8 +10,8 @@ from typing import Optional
 from typing import Tuple
 from typing import Any
 
-from khulnasoft_sdk.analysis import FileAnalysis
-from khulnasoft_sdk.consts import ANALYZE_URL
+from khulnasoft_analyze_sdk.analysis import FileAnalysis
+from khulnasoft_analyze_sdk.consts import ANALYZE_URL
 
 emojis_by_key = {
     'trusted': '✅',

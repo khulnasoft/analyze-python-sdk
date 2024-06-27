@@ -2,12 +2,12 @@ import datetime
 import time
 from typing import Optional
 
-from khulnasoft_sdk import errors
-from khulnasoft_sdk._api import KhulnasoftApi
-from khulnasoft_sdk.api import KhulnasoftApiClient
-from khulnasoft_sdk.api import get_global_api
-from khulnasoft_sdk.consts import AnalysisStatusCode
-from khulnasoft_sdk.consts import CHECK_STATUS_INTERVAL
+from khulnasoft_analyze_sdk import errors
+from khulnasoft_analyze_sdk._api import KhulnasoftApi
+from khulnasoft_analyze_sdk.api import KhulnasoftApiClient
+from khulnasoft_analyze_sdk.api import get_global_api
+from khulnasoft_analyze_sdk.consts import AnalysisStatusCode
+from khulnasoft_analyze_sdk.consts import CHECK_STATUS_INTERVAL
 
 
 class Operation:

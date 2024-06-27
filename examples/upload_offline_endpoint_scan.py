@@ -1,8 +1,8 @@
 import sys
 from pprint import pprint
 
-from khulnasoft_sdk import api
-from khulnasoft_sdk.endpoint_analysis import EndpointAnalysis
+from khulnasoft_analyze_sdk import api
+from khulnasoft_analyze_sdk.endpoint_analysis import EndpointAnalysis
 
 
 def send_file_with_wait(offline_scan_directory: str):

@@ -3,9 +3,9 @@ from http import HTTPStatus
 
 import responses
 
-from khulnasoft_sdk import errors
-from khulnasoft_sdk.family import Family
-from khulnasoft_sdk.family import get_family_by_name
+from khulnasoft_analyze_sdk import errors
+from khulnasoft_analyze_sdk.family import Family
+from khulnasoft_analyze_sdk.family import get_family_by_name
 from tests.unit.base_test import BaseTest
 
 

@@ -3,9 +3,9 @@ from http import HTTPStatus
 
 import responses
 
-from khulnasoft_sdk import consts
-from khulnasoft_sdk import errors
-from khulnasoft_sdk.endpoint_analysis import EndpointAnalysis
+from khulnasoft_analyze_sdk import consts
+from khulnasoft_analyze_sdk import errors
+from khulnasoft_analyze_sdk.endpoint_analysis import EndpointAnalysis
 from tests.unit.base_test import BaseTest
 
 

@@ -1,8 +1,8 @@
 import os
 import sys
 
-from khulnasoft_sdk import api
-from khulnasoft_sdk.analysis import FileAnalysis
+from khulnasoft_analyze_sdk import api
+from khulnasoft_analyze_sdk.analysis import FileAnalysis
 
 API_KEY = os.environ.get('KHULNASOFT_API_KEY')
 DIRECTORY_PATH = ''
